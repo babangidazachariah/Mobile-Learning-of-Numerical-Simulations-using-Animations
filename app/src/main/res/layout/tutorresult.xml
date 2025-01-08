@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:background="#bebebe"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtshowSolution"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:text="@string/labelFunction"
+            android:textSize="9pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFunction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/labelFunction"
+            android:textSize="9pt"
+            android:textStyle="bold" />
+
+
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/btn_TutorClose"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/selected"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

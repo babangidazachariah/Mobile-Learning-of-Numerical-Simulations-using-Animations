@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+
+
+        <RadioButton
+            android:id="@+id/coordinates"
+            android:textColorHighlight="#ff0000"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coord"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id = "@+id/notecoo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/coordinates"
+            android:text="@string/simsoncoordinates"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id = "@+id/thefu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/xval"
+            android:layout_below="@+id/notecoo"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/xcoordinate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ycoordinate"
+            android:layout_below="@+id/notecoo"
+            android:layout_toRightOf="@+id/thefu"
+            android:hint="@string/xhint"
+            android:inputType="text" />
+
+        <TextView
+            android:id = "@+id/yco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yval"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/thefu"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ycoordinate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/function"
+            android:layout_below="@+id/xcoordinate"
+            android:layout_toRightOf="@+id/yco"
+            android:hint="@string/xhint"
+            android:inputType="numberDecimal" />
+
+        <RadioButton
+            android:id="@+id/functions"
+            android:textColorHighlight="#ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/ycoordinate"
+            android:text="@string/havefunctions"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id ="@+id/noteco"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/functions"
+            android:layout_marginTop="5dp"
+            android:text="@string/notice"
+            android:gravity="center"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/func"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/function"
+            android:layout_below="@+id/noteco"
+            android:layout_marginTop = "10dp"
+            android:text="@string/labelFunction"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/upperBound"
+            android:layout_below="@+id/noteco"
+            android:layout_toRightOf="@+id/func"
+            android:ems="10"
+            android:hint="@string/hint"
+            android:inputType="text" />
+
+        <TextView
+            android:id ="@+id/upper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop = "10dp"
+            android:layout_below="@+id/function"
+            android:text="@string/labelupper"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/upperBound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/lowerBound"
+            android:layout_below="@+id/function"
+            android:layout_toRightOf="@+id/upper"
+            android:hint="@string/numerichint"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id = "@+id/low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop = "10dp"
+            android:layout_below="@+id/upperBound"
+            android:text="@string/labellower"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/lowerBound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upperBound"
+            android:layout_toRightOf="@+id/low"
+            android:ems="10"
+            android:hint="@string/numerichint"
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+        <TextView
+            android:id = "@+id/intf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop = "10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/low"
+            android:text="@string/inter"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/interv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lowerBound"
+            android:layout_toRightOf="@+id/intf"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/numerichint"
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_Start"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/interv"
+            android:layout_marginTop="10dp"
+            android:text="@string/captionStart"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_CancelTutor"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/captionCancel"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

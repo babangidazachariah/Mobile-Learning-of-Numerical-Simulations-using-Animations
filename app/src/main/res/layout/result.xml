@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#bebebe"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_ViewGraph"
+            android:background="@null"
+            android:layout_width="160dp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtResult"
+            android:layout_marginTop="50dp"
+            android:text="@string/viewgraph"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_CloseResult"
+            android:background="@null"
+            android:layout_width="160dp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/closeResult"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

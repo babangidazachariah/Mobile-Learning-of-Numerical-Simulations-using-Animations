@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#bebebe"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/labelFunction"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EulerCauchyfunction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffff0"
+            android:textColor="#000000"
+            android:hint="@string/hint"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/labelInitialx"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EulerCauchyinitialX"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffff0"
+            android:textColor="#000000"
+            android:hint="@string/numerichint"
+            android:inputType="text" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/labelInitialy"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EulerCauchyinitialY"
+            android:layout_width="fill_parent"
+            android:background="#fffff0"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:hint="@string/numerichint"
+            android:inputType="text" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/labelStepSize"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/EulerCauchystepSize"
+            android:layout_width="fill_parent"
+            android:background="#fffff0"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:hint="@string/numerichint"
+            android:inputType="text" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/labelSteps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EulerCauchysteps"
+            android:layout_width="fill_parent"
+            android:background="#fffff0"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_EulerCauchyComputeTutor"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:background="@null"
+                android:text="@string/captionCompute"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_EulerCauchyBackTutor"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/captionBack"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

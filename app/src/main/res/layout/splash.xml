@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3f3f3f"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/firstTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="top"
+        android:text="@string/developer"
+        android:textSize="6pt"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/secondTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="top"
+        android:text="@string/intro"
+        android:textSize="15pt"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/thirdTextView"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:text="@string/school"
+        android:textSize="6pt"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/fourthTextView"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:gravity="left"
+        android:layout_gravity="left"
+        android:text="@string/supervisor"
+        android:textSize="6pt"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/cont"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/continu"
+        android:background="@null"
+        android:gravity="center"
+        android:textColor="#f0003f"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/fifthTextView"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:lineSpacingExtra="4pt"
+        android:text="@string/versionInfo"
+        android:textSize="5pt"
+        android:textStyle="italic" />
+
+</LinearLayout>
